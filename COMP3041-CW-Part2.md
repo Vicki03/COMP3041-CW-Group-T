@@ -43,7 +43,14 @@ evaluates each issue against the Software Engineering Code of Ethics
 Code falls short.
 
 
-## Indirect stakeholders
+## 2. Stakeholders
+
+### Direct Stakeholders
+
+
+
+
+### Indirect Stakeholders
 
 Indirect stakeholders never use Pandai themselves but are still affected by how it is designed. We identify two groups.
 
