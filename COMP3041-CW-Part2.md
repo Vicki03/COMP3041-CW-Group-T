@@ -41,3 +41,13 @@ disclosures. This report extends that work with new first-hand evidence,
 evaluates each issue against the Software Engineering Code of Ethics 
 (ACM/IEEE-CS, 1999), and applies Kantian deontology and utilitarianism where the 
 Code falls short.
+
+
+## Indirect stakeholders
+
+Indirect stakeholders never use Pandai themselves but are still affected by how it is designed. We identify two groups.
+
+**Legal guardians who have not registered.** Pandai’s privacy policy deems that any personal data relating to minors is given “with the consent of the minor’s legal guardian”, and that this consent is provided by the child’s registration (Pandai Education Sdn Bhd, 2020; Figure 3). A guardian who never opens the app therefore has deemed consent attached to their name. In our walkthrough, a student could register with only a name, username and password, with no parent step, and was then asked for a home address (Figures 1a, 1c). The guardian’s household address can thus be collected without their knowledge. This is the practice behind Issue 1. The guardian also has no say over who gets access: another adult can link to the child with only a six-digit PIN and then switch into the child’s account (Figure 2). The harm is a loss of control over data about their own child and home, which the policy’s unexplained export and deletion promises do not restore.
+
+**Schools, teachers and the Ministry of Education.** Pandai is partnering with the Ministry to introduce its AI tools in schools (500 Global, 2025). Teachers who do not use Pandai personally and schools that adopt it are affected by Issue 2 and Issue 4. Ask Pbot could not say how chats are stored (Figure 4b), and the privacy policy has not been updated since 2020 and never mentions AI (Figure 3). Education authorities may therefore be endorsing a tool whose handling of pupils’ data they cannot fully explain to parents. This also affects trust in public education. Where use is encouraged by schools, families may feel they cannot refuse.
+
