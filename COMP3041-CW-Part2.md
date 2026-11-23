@@ -45,18 +45,69 @@ Code falls short.
 
 ## 2. Stakeholders
 
-### Direct Stakeholders
+Pandai affects both the people who use it and people who never open it. For each 
+group, we set out the features that affect them, how, and the evidence.
 
-Students (minors aged 6–18). As Pandai’s primary end-users, students interact directly with every feature that we have identified. When signing up, children register with only a username and password without parental verification, and the profile screen subsequently prompts them for their home address under the promise of physical "gifts and rewards." In the learning interface, students interact with Ask Pbot, an AI study buddy that admitted during walkthrough testing that it does not know how chat conversations are stored or used, while readily answering off-topic entertainment queries. Furthermore, student learning routines are governed by aggressive gamification: virtual coins expire within 36 hours unless a quiz is submitted, chapters are locked behind star requirements, unblurred national leaderboards publish children's real names and photos, and reward catalogs offer commercial gaming credits (Mobile Legends, PUBG, Roblox). These mechanics exploit loss aversion and social comparison, inducing stress and shifting student motivation from self-directed study to compulsive engagement (Radesky et al., 2022).
+### 2.1 Direct Stakeholders
 
-Registered parents and guardians. Parents who create accounts to oversee learning or purchase subscriptions are affected by onboarding, monetization, and disclosure practices. In the parent portal, linking a child requires only an unverified six-digit student PIN with no proof of legal guardianship, and the dashboard allows parents to silently switch into and monitor the child's session without the child's knowledge. Financially, the 36-hour coin-expiry prompt explicitly directs users to buy a Premium subscription to keep coins permanently, while high-value gaming vouchers are restricted behind paid tiers, creating child-driven financial pressure on household budgets. In terms of transparency, parents face contradictory disclosures: Google Play’s Data safety section states that no data is shared with third parties, whereas the iOS App Store indicates personal data is collected for cross-app tracking. These conflicting declarations prevent parents from making an informed risk assessment regarding their child’s digital safety (Arkalakis et al., 2024).
+Direct stakeholders use Pandai or make decisions about it.
 
-Pandai Education Sdn Bhd and its developers. The operating company and its technical workforce design, maintain, and monetize the platform. Company management benefits commercially from low-friction student onboarding and gamified retention loops that drive subscription revenue. However, these practices create serious regulatory and reputational liabilities: Pandai’s published privacy policy has not been updated since October 2020, omits Ask Pbot entirely, and directly contradicts app store data declarations. For software engineers, implementing artificial countdown timers, star-gated curriculum locks, and opaque AI integrations without data-retention controls places them in direct professional conflict with their duty to protect user privacy and avoid deceptive software design (ACM/IEEE-CS, 1999, Clauses 1.03, 1.06).
+**Students (Issues 1–4).** Students aged 6 to 18 are Pandai's primary users and 
+are affected by every issue we identified. They register with only a name, 
+username and password, with no parent step, and are then asked for a home 
+address in exchange for gifts and rewards, although this step can be skipped 
+(Figure 3.1a). They also chat with Ask Pbot, which could not explain how 
+conversations are stored [Fig: pbot]. Their routines are shaped by 
+gamification: coins expire within 36 hours unless a quiz is submitted, national 
+leaderboards display their names and photos, and rewards include gaming 
+credits [Fig: coins], [Fig: leaderboard], [Fig: vouchers]. Such mechanics risk 
+shifting motivation from learning towards compulsive engagement (Radesky et al., 
+2022).
 
-Third-party advertising and analytics partners. Pandai’s privacy policy permits data sharing with third parties for "personalisation" and "behavioural analysis," while its App Store label declares that user identifiers are shared to track children across other companies' apps. These commercial partners receive granular behavioral and device data from a captive audience of minors. However, because the Google Play label claims zero third-party data sharing and the privacy policy names no specific corporate recipients or ad networks, these partners operate with complete opacity and zero direct accountability to families.
+**Registered parents (Issues 1, 3 and 4).** Parents link to a child using only 
+a six-digit PIN, with no proof of guardianship, and can then switch into the 
+child's account without the child being notified (Figures 3.1b, 3.1d). The 
+coin-expiry prompt directs them towards a Premium subscription [Fig: coins]. 
+They also face contradictory disclosures: Google Play states that no data is 
+shared with third parties, while the App Store lists data used to track users 
+across other companies' apps [Fig: labels]. This prevents an informed choice 
+about their child's data (Arkalakis et al., 2024).
 
-Schools, teachers and the Ministry of Education. These groups are indirect stakeholders because they do not use Pandai as learners, yet they are connected to it through institutional adoption. Pandai is partnering with the Ministry of Education to introduce its AI tools in schools (500 Global, 2025), which places the platform inside the public education system. Teachers and school administrators who encourage or approve its use become, in effect, intermediaries between Pandai and pupils' families, even if they never use the app themselves. This exposes them to Issues 2 and 4. In our testing, Ask Pbot could not say how chats are stored, and the privacy policy has not been updated since 2020 and never mentions AI. The Ministry and schools may therefore be endorsing a tool whose handling of pupils' data they cannot fully explain to parents, which risks damaging trust in public education if problems emerge. There is also a pressure effect on families. When a school recommends a tool, parents may feel unable to refuse, which weakens the voluntary consent the privacy policy claims to rely on.
+**Pandai Education Sdn Bhd and its developers (Issues 1–4).** The company 
+benefits commercially from easy sign-up and engagement-driven retention. Its 
+developers build the countdowns, locked chapters and AI features, yet business 
+decisions such as linking coin retention to subscriptions rest with management. 
+This places developers under the Code's duties to protect privacy and avoid 
+deception (ACM/IEEE-CS, 1999, Clauses 1.03, 1.06).
 
-### Indirect Stakeholders
+**Business partners (Issues 2–4).** The Ministry of Education has worked with 
+Pandai to introduce its AI tools in schools (500 Global, 2025), lending the app 
+public credibility and sharing responsibility for its data practices. Reward 
+partners reach young users through gaming vouchers [Fig: vouchers]. The privacy 
+policy also permits sharing data with unnamed third parties for 
+"personalisation" and "behavioural analysis" (Pandai Education Sdn Bhd, 2020), 
+so families cannot tell which companies receive their children's data.
 
-Legal guardians who have not registered. These guardians are indirect stakeholders because they never create an account or open the app, yet decisions are made in their name. Pandai's privacy policy states that any personal data relating to minors is deemed to be given with the consent of the minor's legal guardian, and that this consent is provided simply by the child's registration (Pandai Education Sdn Bhd, 2020). The link between guardian and platform is therefore created by the child's actions alone. A guardian who has never heard of Pandai still has consent recorded on their behalf. This links to Issue 1 because, in our walkthrough, a student could register with only a name, username and password, with no parent step, and was later asked for a home address. Although the app provides an option to skip entering the home address, the information can still be requested and collected without the guardian's knowledge. The guardian also has little control over who else gains access. Another adult can link to a child's account using only a six-digit PIN, with no proof of guardianship, and can then switch into that account. The harm is a loss of control over data about their child and their home. The policy promises that data can be exported and deleted but never explains how, so the guardian has no practical way to restore that control.
+### 2.2 Indirect Stakeholders
+
+Indirect stakeholders never use Pandai themselves but are still affected by how 
+it is designed.
+
+**Legal guardians who have not registered (Issue 1).** Pandai's privacy policy 
+deems personal data relating to minors to be given "with the consent of the 
+minor's legal guardian", and treats the child's registration as that consent 
+(Pandai Education Sdn Bhd, 2020; Figure 3.1c). A guardian who has never heard of 
+Pandai therefore has consent recorded on their behalf. Their child can register 
+with no parent step and be asked for a home address (Figure 3.1a), so household 
+data may be collected without the guardian's knowledge. Guardians also cannot 
+control who gains access: any adult who obtains the child's PIN can link to the 
+account and switch into it, and more than one adult can do so (Figures 3.1b, 
+3.1f). Although accounts can be deleted, this is only possible from inside the 
+app (Figure 3.1h), which an unregistered guardian may not know exists.
+
+**Schools and non-using teachers (Issues 2 and 4).** As Pandai's work with the 
+Ministry brings it into classrooms (500 Global, 2025), schools and teachers who 
+never use the app may still be expected to recommend it. Yet Ask Pbot could not 
+explain how chats are stored [Fig: pbot], and the privacy policy, unchanged 
+since 2020, never mentions AI (Figure 3.1c). Schools may therefore be 
+encouraging a tool whose handling of pupils' data they cannot explain to parents.
