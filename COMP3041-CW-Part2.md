@@ -240,3 +240,86 @@ from any other adult who obtains the PIN. And even if the practice is lawful,
 children understand commercial uses of their data poorly and cannot reliably 
 consent for themselves (Livingstone et al., 2019). Legal compliance therefore 
 does not remove the ethical responsibility the SE Code places on engineers.
+
+
+### 3.2 Issue 2: Ask Pbot Transparency
+
+**Claim:** Pandai's AI chatbot, Ask Pbot, breaks Clause 1.03 and partly meets 
+Clauses 1.04 and 1.06 of the SE Code (ACM/IEEE-CS, 1999). It answers accurately 
+and discloses that it is an AI, but neither it nor Pandai's support can tell 
+children who can see their chats.
+
+**Evidence:** In Part 1, Pbot introduced itself as an AI study buddy, could not 
+explain how chats are stored, and answered off-topic questions, including 
+offering to do homework and recommending a film (Figure 3.2a).
+
+<p align="left">
+  <img src="evidence/3-2a-part1-pbot.png" alt="Part 1 Ask Pbot walkthrough" width="650">
+</p>
+
+*Figure 3.2a. Part 1 walkthrough: (left) introduction; (middle) response on chat 
+use; (right) agreeing to do homework and recommending a film.*
+
+Our follow-up tests produced four new findings. First, Pbot answered all four 
+harder questions correctly, including correcting a false premise (Figure 3.2b).
+
+<p align="left">
+  <img src="evidence/3-2b-accuracy.png" alt="Accuracy tests" width="750">
+</p>
+
+*Figure 3.2b. Accuracy tests: a discount problem, a physics misconception, a 
+Malaysian history question and a false multiplication premise.*
+
+Second, Pbot confirmed it is an AI but could not name the model or provider 
+behind it (Figure 3.2c).
+
+<p align="left">
+  <img src="evidence/3-2c-self-disclosure.png" alt="Pbot self-disclosure" width="420">
+</p>
+
+*Figure 3.2c. Pbot states it is an AI (left) but cannot identify its model or 
+provider (right).*
+
+Third, when asked whether chats are stored and whether parents or teachers can 
+read them, Pbot said Pandai may store or process them but could not confirm 
+who has access, suggesting parents may see only some learning activity. 
+Pandai's separate support chatbot gave the same non-answer (Figure 3.2d). Yet our 
+test in Section 3.1 showed that any linked adult can open the child's full Ask 
+Pbot history (Figure 3.1g).
+
+<p align="left">
+  <img src="evidence/3-2d-chat-privacy.png" alt="Chat privacy answers" width="650">
+</p>
+
+*Figure 3.2d. Chat privacy: (left, middle) Pbot cannot confirm who can read 
+chats; (right) Pandai's support chatbot cannot answer either.*
+
+Fourth, Pbot warned against sharing a home address and phone number, and 
+students can delete individual chats (Figures 3.2e, 3.2f).
+
+<p align="left">
+  <img src="evidence/3-2e-personal-info.png" alt="Personal information warning" width="210">
+  <img src="evidence/3-2f-delete-chat.png" alt="Chat deletion" width="420">
+</p>
+
+*Figure 3.2e (left). Pbot warns against sharing personal details. Figure 3.2f 
+(right). Chats can be renamed or deleted.*
+
+**Reasoning:** Clause 1.03 requires engineers to approve software only if it does 
+not diminish privacy. Children are invited to ask anything, yet their chats can 
+be read by any adult holding their PIN, and the privacy policy, unchanged since 
+2020, never mentions AI or chat data (Figure 3.1c). We therefore judge this a 
+breach. Clause 1.04 requires disclosing potential dangers. Pbot partly meets this 
+by cautioning about personal details and noting it may make mistakes, but never warns 
+children that others can read their chats. Clause 1.06 requires honesty. 
+Pbot is honest that it is an AI, but its suggestion that parents see only some 
+learning activity understates what they can actually access, so this clause is 
+only partly met. This falls short of UNICEF's (2021) call for AI systems used by 
+children to be transparent about how their data is used.
+
+**Counterpoint:** Pandai could argue that Pbot is accurate, discloses that it is 
+an AI, discourages sharing personal details and lets students delete chats, all 
+of which are genuine safeguards. However, these protect children from the AI's 
+mistakes, not from the adults who can read their conversations. When neither the 
+chatbot nor Pandai's own support can explain who sees a child's chats, the child 
+cannot make an informed choice about what to share (Holmes et al., 2022).
