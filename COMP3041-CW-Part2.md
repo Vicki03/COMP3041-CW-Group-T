@@ -240,3 +240,74 @@ from any other adult who obtains the PIN. And even if the practice is lawful,
 children understand commercial uses of their data poorly and cannot reliably 
 consent for themselves (Livingstone et al., 2019). Legal compliance therefore 
 does not remove the ethical responsibility the SE Code places on engineers.
+
+
+### 3.4 Issue 4: Transparency Gap
+
+**Claim:** Pandai describes its data practices inconsistently across its Google
+Play label, App Store label and privacy policy. It falls short of Clause 1.06 of the 
+SE Code (ACM/IEEE-CS, 1999) and only partly meets Clauses 6.07 and 3.12. The
+evidence does not show that any declaration is false, but it leaves parents unable
+to tell what happens to their children's data.
+
+**Evidence:** The Google Play Data safety section states that no data is shared
+with third parties and declares analytics only for user IDs (Figure 3.4a).
+
+<p align="center">
+  <img src="evidence/3-4a-playstore-label.png" alt="Google Play Data safety section" width="300">
+</p>
+
+*Figure 3.4a. Google Play Data safety section for Pandai.*
+
+The App Store label states that name, email address, physical address, user ID and
+device ID may be used to track users across apps and websites owned by other
+companies, and lists email for advertising or marketing (Figure 3.4b).
+
+<p align="center">
+  <img src="evidence/3-4b-appstore-label.png" alt="App Store Data Used to Track You" width="300">
+</p>
+
+*Figure 3.4b. App Store label for Pandai, "Data Used to Track You".*
+
+The privacy policy allows third-party providers to receive data for
+personalisation and behavioural analysis, but names none and never mentions
+cross-app tracking (Pandai Education Sdn Bhd, 2020). Neither store label includes
+an app activity category, although the policy describes collecting information
+about how users use the service. As Section 3.1 showed, the policy is also dated
+October 2020 and treats registration as guardian consent (Figure 3.1c).
+
+**Reasoning:** Clause 1.06 requires engineers to be fair and avoid deception in
+public statements about software. We do not claim deception, because Google does
+not count service providers as "sharing" and Apple defines "tracking" differently.
+However, a parent on Android is told that no data is shared, a parent on iOS is
+told that identifiers may be used for tracking and that email may be used for
+advertising or marketing, and the policy answers neither. Fairness to users
+depends on the whole picture, so we judge Clause 1.06 not fully met. Clause 6.07
+requires accuracy about the characteristics of software. Neither label includes
+an app activity category, although the policy describes collecting information
+about how users use the service, so the labels give a narrower picture than the
+developer's own policy. Because the labels are accurate in other respects, such as
+the deletion option, we judge Clause 6.07 partly met. Clause 3.12 requires respect
+for the privacy of those affected. Pandai publishes labels on both stores and
+offers working in-app deletion (Figure 3.1h), so this clause partially met.
+However, privacy cannot be respected if users cannot see how their data is used.
+
+This pattern is common. Large-scale studies find that Play Data Safety labels
+often disagree with developers' privacy policies (Khatun et al., 2026), that iOS
+labels are often inaccurate (Kollnig et al., 2022), and that Data Safety labels
+rely on developers' own reporting (Khandelwal et al., 2024). For a children's app
+the gap matters more, because the person who must interpret the label is a parent
+acting for a child who is unlikely to evaluate it (Livingstone et al., 2019).
+
+**Counterpoint:** Pandai could argue that each label may follow its store's own
+rules: Google does not count data processed by service providers as "sharing",
+Apple defines "tracking" around cross-app advertising, and the policy says its
+providers have no independent right to share the data. On this view the
+differences come from platform definitions, not from dishonesty, and our evidence
+cannot show who receives the data or what they receive. These points are fair,
+which is why we do not claim deception. But parents do not read platform
+definitions. They use labels to compare apps and decide whether to trust them.
+When two official labels for the same app give different answers, and neither
+shows the usage analysis the policy describes, they stop doing that job. Meeting
+each store's rules separately therefore does not remove the engineer's duty under
+Clause 1.06 to give users a fair picture.
